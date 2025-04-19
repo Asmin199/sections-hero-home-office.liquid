@@ -1,0 +1,36 @@
+/* Hero Section */
+.hero-home-office {
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+.hero-btn {
+  background: #2a2a2a;
+  color: white;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.category-item img {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.category-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Best Sellers Carousel */
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 0;
+}
