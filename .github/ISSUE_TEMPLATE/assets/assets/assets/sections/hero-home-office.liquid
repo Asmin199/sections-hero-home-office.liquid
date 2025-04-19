@@ -1,0 +1,20 @@
+<div class="hero-home-office" style="background-image: url('{{ section.settings.hero_image | img_url: 'master' }}')">
+  <h1>{{ section.settings.hero_title }}</h1>
+  <p>{{ section.settings.hero_subtitle }}</p>
+  <a href="{{ section.settings.button_link }}" class="hero-btn">
+    {{ section.settings.button_text }}
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    { "type": "image_picker", "id": "hero_image", "label": "Hero Image" },
+    { "type": "text", "id": "hero_title", "label": "Title", "default": "Upgrade Your Home Office" },
+    { "type": "text", "id": "hero_subtitle", "label": "Subtitle", "default": "Ergonomic chairs, desks & more" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Shop Now" },
+    { "type": "url", "id": "button_link", "label": "Button Link" }
+  ]
+}
+{% endschema %}
